@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: ece6cc34-e19c-4355-8989-296e3ffbbafd
+
+localResources:
+  collections:
+    - ..\FuelRoute.postman_collection.json

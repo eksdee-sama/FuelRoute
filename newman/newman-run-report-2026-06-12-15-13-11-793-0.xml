@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="FuelRoute Demo" tests="36" time="0.000">
+  <testsuite name="Route - Basic (addresses)" id="68780427-8efa-4d3c-a7fd-811a5b5a0ee0" timestamp="2026-06-12T15:13:07.496Z" tests="2" failures="12" errors="6" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: Invalid URI "http:///?start=New%20York,NY&end=Boston,MA"
+    at Request.init (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:399:31)
+    at new Request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:226:8)
+    at request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\index.js:46:10)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:79:23
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5797:24)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setCertificate (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:50:20)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:74:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5799:13)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setProxy (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:31:9)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:71:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at Object.waterfall (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5802:9)
+
+---
+Iteration: 1
+RequestError: Error: Invalid URI "http:///?start=New%20York,NY&end=Boston,MA"
+    at Request.init (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:399:31)
+    at new Request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:226:8)
+    at request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\index.js:46:10)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:79:23
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5797:24)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setCertificate (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:50:20)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:74:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5799:13)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setProxy (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:31:9)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:71:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at Object.waterfall (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5802:9)
+
+---
+Iteration: 2
+RequestError: Error: Invalid URI "http:///?start=New%20York,NY&end=Boston,MA"
+    at Request.init (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:399:31)
+    at new Request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:226:8)
+    at request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\index.js:46:10)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:79:23
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5797:24)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setCertificate (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:50:20)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:74:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5799:13)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setProxy (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:31:9)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:71:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at Object.waterfall (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5802:9)
+
+---
+Iteration: 3
+RequestError: Error: Invalid URI "http:///?start=New%20York,NY&end=Boston,MA"
+    at Request.init (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:399:31)
+    at new Request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:226:8)
+    at request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\index.js:46:10)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:79:23
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5797:24)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setCertificate (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:50:20)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:74:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5799:13)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setProxy (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:31:9)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:71:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at Object.waterfall (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5802:9)
+
+---
+Iteration: 4
+RequestError: Error: Invalid URI "http:///?start=New%20York,NY&end=Boston,MA"
+    at Request.init (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:399:31)
+    at new Request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:226:8)
+    at request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\index.js:46:10)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:79:23
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5797:24)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setCertificate (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:50:20)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:74:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5799:13)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setProxy (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:31:9)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:71:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at Object.waterfall (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5802:9)
+
+---
+Iteration: 5
+RequestError: Error: Invalid URI "http:///?start=New%20York,NY&end=Boston,MA"
+    at Request.init (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:399:31)
+    at new Request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\request.js:226:8)
+    at request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\node_modules\postman-request\index.js:46:10)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:79:23
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5797:24)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setCertificate (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:50:20)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:74:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at next (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5799:13)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:329:20
+    at setProxy (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:31:9)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\request-wrapper.js:71:13
+    at nextTask (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5791:13)
+    at Object.waterfall (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:5802:9)
+
+---
+]]></system-err>
+    <testcase name="Status code is 200" time="0.000" classname="RouteBasicAddresses">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Basic (addresses).]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has route" time="0.000" classname="RouteBasicAddresses">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Basic (addresses).]]>
+        <![CDATA[Test description: Response has route.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Route - Coords + preset" id="c8dadc74-36d6-49b7-963b-959242c22819" timestamp="2026-06-12T15:13:07.496Z" tests="2" failures="12" errors="6" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 1
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 2
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 3
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 4
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 5
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+    <testcase name="200" time="0.000" classname="RouteCoordsPreset">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Coords + preset.]]>
+        <![CDATA[Test description: 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Has fuel_stops or summary" time="0.000" classname="RouteCoordsPreset">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Coords + preset.]]>
+        <![CDATA[Test description: Has fuel_stops or summary.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Route - Avoid tolls &amp; highways" id="d34add77-f263-4203-b048-ab010d331b41" timestamp="2026-06-12T15:13:07.496Z" tests="1" failures="6" errors="6" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 1
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 2
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 3
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 4
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 5
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+    <testcase name="200 or handled error" time="0.000" classname="RouteAvoidTollsAmpHighways">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'UNDEFINED'">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Avoid tolls & highways.]]>
+        <![CDATA[Test description: 200 or handled error.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'UNDEFINED'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'UNDEFINED'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Route - Custom tank &amp; mpg" id="173b40eb-c325-4685-9af9-2d56f4a9f891" timestamp="2026-06-12T15:13:07.496Z" tests="2" failures="12" errors="6" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 1
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 2
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 3
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 4
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 5
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+    <testcase name="Status 200" time="0.000" classname="RouteCustomTankAmpMpg">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Custom tank & mpg.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Has summary" time="0.000" classname="RouteCustomTankAmpMpg">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Custom tank & mpg.]]>
+        <![CDATA[Test description: Has summary.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Route - Map (HTML)" id="98665d56-7b8d-4b6c-8e4d-e5a6075acaf8" timestamp="2026-06-12T15:13:07.496Z" tests="2" failures="12" errors="6" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 1
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 2
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 3
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 4
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 5
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+    <testcase name="200" time="0.000" classname="RouteMapHtml">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Map (HTML).]]>
+        <![CDATA[Test description: 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is html" time="0.000" classname="RouteMapHtml">
+      <failure type="AssertionFailure" message="the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Route - Map (HTML).]]>
+        <![CDATA[Test description: Content-Type is html.]]>
+        <![CDATA[Error message: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string.]]>
+        <![CDATA[Stacktrace: AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string
+   at Object.eval sandbox-script.js:2:5).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Place search (autocomplete)" id="2e7dd14b-6023-40ab-be5d-8ce601645912" timestamp="2026-06-12T15:13:07.496Z" tests="2" failures="12" errors="6" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 1
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 2
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 3
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 4
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+Iteration: 5
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:443:29)
+    at C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\Eksdee Sama\Documents\Assginment code\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+    <testcase name="200" time="0.000" classname="PlaceSearchAutocomplete">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Place search (autocomplete).]]>
+        <![CDATA[Test description: 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+    <testcase name="Returns array" time="0.000" classname="PlaceSearchAutocomplete">
+      <failure type="AssertionFailure" message="&quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 6 times.]]>
+        <![CDATA[Collection JSON ID: d9b7f3b4-7c3a-4f2b-9b7a-1a2c3d4e5f60.]]>
+        <![CDATA[Collection name: FuelRoute Demo.]]>
+        <![CDATA[Request name: Place search (autocomplete).]]>
+        <![CDATA[Test description: Returns array.]]>
+        <![CDATA[Error message: "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: JSONError: "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:6).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>
