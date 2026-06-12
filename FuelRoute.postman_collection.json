@@ -20,7 +20,7 @@
             {"key": "end", "value": "Las Vegas, NV"}
           ]
         },
-        "description": "747 mi, needs multiple fuel-ups. Check: summary.total_fuel_cost_usd, fuel_stops[], X-Response-Time + X-Cache headers. Send TWICE: first = MISS (~2s), second = HIT (~150ms)."
+        "description": "747 mi, needs multiple fuel-ups. Check: summary.total_fuel_cost_usd, fuel_stops[], X-Response-Time + X-Cache headers. NEW: _analytics.optimizer_used + _analytics.optimality_gap_usd — every plan is verified against an exact DP oracle (Gas Station Problem, Khuller et al. 2007), so the cost is provably optimal. Send TWICE: first = MISS (~2s), second = HIT (~150ms)."
       }
     },
     {
