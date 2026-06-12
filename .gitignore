@@ -1,1 +1,20 @@
-node_modules
+﻿# Python
+venv/
+__pycache__/
+*.pyc
+
+# Secrets - use .env.example as the template
+.env
+
+# Node / test tooling
+node_modules/
+newman/
+newman-report-*.html
+
+# SQLite transients (db.sqlite3 itself IS committed so reviewers can run instantly)
+db.sqlite3-shm
+db.sqlite3-wal
+
+# Logs
+server.log
+*.log
