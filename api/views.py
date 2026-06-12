@@ -930,7 +930,7 @@ class PlaceSearchView(View):
 
 class HomeView(View):
     def get(self, request):
-        resp = HttpResponse(_render_home_html(), content_type="text/html")
+        resp = HttpResponse(_render_home_html(), content_type="text/html; charset=utf-8")
         resp["X-Content-Type-Options"] = "nosniff"
         resp["X-Frame-Options"]        = "DENY"
         resp["Referrer-Policy"]        = "strict-origin-when-cross-origin"
@@ -962,7 +962,7 @@ def _render_home_html() -> str:
     html{scroll-behavior:smooth}
     body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden;position:relative}
 
-    /* âââ ANIMATED MESH BACKGROUND âââ */
+    /* ─── ANIMATED MESH BACKGROUND ─── */
     .bg-mesh{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
     .orb{position:absolute;border-radius:50%;filter:blur(100px);will-change:transform}
     .orb1{width:700px;height:700px;background:radial-gradient(circle,rgba(37,99,235,.14) 0%,transparent 65%);top:-200px;left:-150px;animation:drift1 28s ease-in-out infinite}
@@ -972,10 +972,10 @@ def _render_home_html() -> str:
     @keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}40%{transform:translate(-35px,25px) scale(1.04)}75%{transform:translate(30px,-20px) scale(.97)}}
     .grid-dots{position:fixed;inset:0;z-index:0;background-image:radial-gradient(rgba(255,255,255,.028) 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
 
-    /* âââ LAYOUT âââ */
+    /* ─── LAYOUT ─── */
     .page{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column}
 
-    /* âââ NAV âââ */
+    /* ─── NAV ─── */
     nav{
       display:flex;align-items:center;justify-content:space-between;
       padding:16px 32px;
@@ -1003,7 +1003,7 @@ def _render_home_html() -> str:
     .live-dot{width:6px;height:6px;border-radius:50%;background:var(--grn);box-shadow:0 0 7px var(--grn);animation:blink 2s ease-in-out infinite}
     @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
 
-    /* âââ HERO âââ */
+    /* ─── HERO ─── */
     .hero{
       flex:1;display:flex;flex-direction:column;align-items:center;
       padding:64px 20px 32px;text-align:center;
@@ -1034,7 +1034,7 @@ def _render_home_html() -> str:
     .hero-sub b{color:var(--grn2);font-weight:600}
     @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
-    /* âââ MAIN CARD âââ */
+    /* ─── MAIN CARD ─── */
     .card{
       width:100%;max-width:570px;
       background:rgba(13,24,41,.88);
@@ -1046,7 +1046,7 @@ def _render_home_html() -> str:
       animation:fadeUp .7s .24s ease both;
     }
 
-    /* âââ LOCATION INPUTS âââ */
+    /* ─── LOCATION INPUTS ─── */
     .loc-group{
       background:var(--sur);border:1px solid var(--brd);
       border-radius:18px;margin-bottom:14px;overflow:visible;
@@ -1089,7 +1089,7 @@ def _render_home_html() -> str:
     }
     .swap-btn:hover{border-color:var(--blu);color:var(--blu2);transform:rotate(180deg)}
 
-    /* âââ DROPDOWN âââ */
+    /* ─── DROPDOWN ─── */
     .drop{
       position:absolute;top:calc(100% + 9px);left:-1px;right:-1px;
       background:#060F1E;
@@ -1108,10 +1108,10 @@ def _render_home_html() -> str:
     .di-lbl{font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     .di-crd{font-size:10px;color:var(--blu3);font-family:'SF Mono',monospace;margin-top:2px}
 
-    /* âââ SECTION LABEL âââ */
+    /* ─── SECTION LABEL ─── */
     .sec-lbl{font-size:10px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:9px}
 
-    /* âââ VEHICLE PRESETS âââ */
+    /* ─── VEHICLE PRESETS ─── */
     .preset-wrap{margin-bottom:14px}
     .preset-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
     .pcard{
@@ -1131,7 +1131,7 @@ def _render_home_html() -> str:
     .pcard-mpg{font-size:9px;color:var(--mut);font-weight:500}
     .pcard.on .pcard-mpg{color:var(--blu3)}
 
-    /* âââ SPECS âââ */
+    /* ─── SPECS ─── */
     .specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
     .spec-box{
       background:var(--sur);border:1px solid var(--brd);border-radius:13px;
@@ -1143,7 +1143,7 @@ def _render_home_html() -> str:
     .spec-inp{background:none;border:none;outline:none;color:var(--txt);font-size:20px;font-weight:800;font-family:inherit;width:80px}
     .spec-unit{font-size:12px;color:var(--mut);font-weight:500}
 
-    /* âââ ROUTE OPTIONS âââ */
+    /* ─── ROUTE OPTIONS ─── */
     .opts-wrap{margin-bottom:16px}
     .opts-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
     .opt-tog{
@@ -1170,7 +1170,7 @@ def _render_home_html() -> str:
     }
     .pref-sel:focus{border-color:rgba(59,130,246,.4)}
 
-    /* âââ SUBMIT BUTTON âââ */
+    /* ─── SUBMIT BUTTON ─── */
     .go-btn{
       width:100%;padding:16px;
       background:var(--grd);color:#fff;
@@ -1193,11 +1193,11 @@ def _render_home_html() -> str:
     .go-btn-ico{transition:transform .2s}
     .go-btn:hover:not(:disabled) .go-btn-ico{transform:translateX(4px)}
 
-    /* âââ HINT âââ */
+    /* ─── HINT ─── */
     .hint{font-size:11px;color:#1E3050;margin-top:10px;text-align:center;line-height:1.6}
     .hint code{background:var(--sur);color:var(--blu3);padding:1px 5px;border-radius:4px;font-size:10px}
 
-    /* âââ STATS STRIP âââ */
+    /* ─── STATS STRIP ─── */
     .stats-strip{
       display:flex;justify-content:center;align-items:center;
       gap:0;padding:36px 20px 48px;
@@ -1213,7 +1213,7 @@ def _render_home_html() -> str:
     }
     .stat-lbl{font-size:10.5px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.9px;margin-top:5px}
 
-    /* âââ FEATURES ROW âââ */
+    /* ─── FEATURES ROW ─── */
     .feat-row{
       display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
       padding:0 20px 20px;
@@ -1231,12 +1231,12 @@ def _render_home_html() -> str:
     .feat-chip:hover{border-color:rgba(255,255,255,.1);color:var(--txt2)}
     .feat-chip-ico{font-size:14px}
 
-    /* âââ SCROLLBAR âââ */
+    /* ─── SCROLLBAR ─── */
     ::-webkit-scrollbar{width:4px}
     ::-webkit-scrollbar-track{background:transparent}
     ::-webkit-scrollbar-thumb{background:#152030;border-radius:2px}
 
-    /* âââ RESPONSIVE âââ */
+    /* ─── RESPONSIVE ─── */
     @media(max-width:520px){
       .preset-grid{grid-template-columns:repeat(3,1fr)}
       nav{padding:14px 18px}
@@ -1249,13 +1249,13 @@ def _render_home_html() -> str:
       .preset-grid{grid-template-columns:repeat(2,1fr)}
     }
 
-    /* âââ ADVANCED BUTTON âââ */
+    /* ─── ADVANCED BUTTON ─── */
     .adv-btn{display:flex;align-items:center;gap:7px;padding:8px 16px;border-radius:11px;border:1px solid var(--brd);background:var(--sur);color:var(--txt2);font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;font-family:inherit;letter-spacing:.1px}
     .adv-btn:hover{border-color:rgba(255,255,255,.14);color:var(--txt)}
     .adv-btn.active{border-color:rgba(59,130,246,.45);background:rgba(59,130,246,.08);color:var(--blu2)}
     .adv-count{background:var(--blu);color:#fff;border-radius:99px;font-size:9px;font-weight:800;padding:1px 7px;margin-left:1px}
 
-    /* âââ ADVANCED PANEL âââ */
+    /* ─── ADVANCED PANEL ─── */
     .adv-overlay{position:fixed;inset:0;z-index:800;display:none;align-items:flex-end;justify-content:center}
     .adv-overlay.show{display:flex;animation:fadeIn .15s ease}
     .adv-backdrop{position:absolute;inset:0;background:rgba(4,8,15,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
@@ -1270,7 +1270,7 @@ def _render_home_html() -> str:
     .pref-opt.on{border-color:rgba(59,130,246,.45);background:rgba(59,130,246,.09);color:var(--blu2)}
     .pref-opt:hover:not(.on){border-color:rgba(255,255,255,.12);color:var(--txt)}
 
-    /* âââ LOADING OVERLAY âââ */
+    /* ─── LOADING OVERLAY ─── */
     .load-overlay{position:fixed;inset:0;z-index:9999;background:rgba(4,8,15,.9);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);display:none;align-items:center;justify-content:center}
     .load-overlay.show{display:flex;animation:fadeIn .35s ease}
     .load-glass{background:linear-gradient(135deg,rgba(12,22,42,.97),rgba(7,14,28,.99));border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:36px 48px 30px;display:flex;flex-direction:column;align-items:center;gap:14px;box-shadow:0 50px 120px rgba(0,0,0,.85),0 0 0 1px rgba(59,130,246,.05),inset 0 1px 0 rgba(255,255,255,.04);max-width:340px;width:90vw}
@@ -1339,7 +1339,7 @@ def _render_home_html() -> str:
       <h1 class="hero-h">The smartest way to<br/>fuel your road trip</h1>
       <p class="hero-sub">
         2-hop lookahead algorithm across <b>7,500+ stations</b>.<br/>
-        Enter your route â we find every cheap stop.
+        Enter your route — we find every cheap stop.
       </p>
 
       <!-- MAIN CARD -->
@@ -1561,9 +1561,9 @@ def _render_home_html() -> str:
       if(!navigator.geolocation){alert('Geolocation not supported');return}
       navigator.geolocation.getCurrentPosition(function(p){
         var lat=p.coords.latitude,lng=p.coords.longitude;
-        selPlace(w,'My Location ('+lat.toFixed(4)+'Â°, '+lng.toFixed(4)+'Â°)',
+        selPlace(w,'My Location ('+lat.toFixed(4)+'°, '+lng.toFixed(4)+'°)',
           lat.toFixed(6)+','+lng.toFixed(6),lat,lng)
-      },function(){alert('Could not get location â check permissions')})
+      },function(){alert('Could not get location — check permissions')})
     }
 
     var _activePreset='';
@@ -1603,7 +1603,7 @@ def _render_home_html() -> str:
       var fill=document.getElementById('load-fill');
       var step=document.getElementById('load-steps');
       var pct=0,mi=0;
-      var msgs=['Geocoding locationsâ¦','Fetching road geometryâ¦','Scanning 7,500+ stationsâ¦','Optimising fuel stopsâ¦'];
+      var msgs=['Geocoding locations…','Fetching road geometry…','Scanning 7,500+ stations…','Optimising fuel stops…'];
       step.textContent=msgs[0];
       setInterval(function(){
         pct=Math.min(pct+(Math.random()*6+4),92);
@@ -1661,7 +1661,7 @@ def _render_home_html() -> str:
     setupField('end');
   </script>
 
-  <!-- âââ LOADING OVERLAY âââ -->
+  <!-- ═══ LOADING OVERLAY ═══ -->
   <div class="load-overlay" id="load-overlay">
     <div class="load-glass">
       <div class="truck-scene">
@@ -1727,7 +1727,7 @@ def _render_home_html() -> str:
     </div>
   </div>
 
-  <!-- âââ ADVANCED OPTIONS PANEL âââ -->
+  <!-- ═══ ADVANCED OPTIONS PANEL ═══ -->
   <div class="adv-overlay" id="adv-overlay" onclick="closeAdvOutside(event)">
     <div class="adv-backdrop"></div>
     <div class="adv-panel" id="adv-panel">
