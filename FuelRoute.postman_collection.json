@@ -1,0 +1,101 @@
+{
+  "info": {
+    "name": "FuelRoute US — Demo",
+    "description": "Fuel route optimizer API. Start/end in USA -> map, cheapest fuel stops, total cost (500mi tank, 10 MPG defaults).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Long route — Denver to Las Vegas (3 stops)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8001/api/route/?start=Denver, CO&end=Las Vegas, NV",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8001",
+          "path": ["api", "route", ""],
+          "query": [
+            {"key": "start", "value": "Denver, CO"},
+            {"key": "end", "value": "Las Vegas, NV"}
+          ]
+        },
+        "description": "747 mi, needs multiple fuel-ups. Check: summary.total_fuel_cost_usd, fuel_stops[], X-Response-Time + X-Cache headers. Send TWICE: first = MISS (~2s), second = HIT (~150ms)."
+      }
+    },
+    {
+      "name": "2. Direct trip — Dallas to Austin (1 cheapest stop)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8001/api/route/?start=Dallas, TX&end=Austin, TX",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8001",
+          "path": ["api", "route", ""],
+          "query": [
+            {"key": "start", "value": "Dallas, TX"},
+            {"key": "end", "value": "Austin, TX"}
+          ]
+        },
+        "description": "186 mi — fits in one tank. Returns the single cheapest station on route."
+      }
+    },
+    {
+      "name": "3. Coordinates input — zero geocoding calls",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8001/api/route/?start=39.7392,-104.9903&end=36.1699,-115.1398",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8001",
+          "path": ["api", "route", ""],
+          "query": [
+            {"key": "start", "value": "39.7392,-104.9903"},
+            {"key": "end", "value": "36.1699,-115.1398"}
+          ]
+        },
+        "description": "Raw lat,lng input — geocoding skipped entirely. Exactly ONE external API call (routing only)."
+      }
+    },
+    {
+      "name": "4. Custom vehicle — Semi truck preset",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8001/api/route/?start=Chicago, IL&end=Atlanta, GA&tank_range=1400&mpg=6",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8001",
+          "path": ["api", "route", ""],
+          "query": [
+            {"key": "start", "value": "Chicago, IL"},
+            {"key": "end", "value": "Atlanta, GA"},
+            {"key": "tank_range", "value": "1400"},
+            {"key": "mpg", "value": "6"}
+          ]
+        },
+        "description": "Override defaults: 1400mi range, 6 MPG semi truck."
+      }
+    },
+    {
+      "name": "5. Validation — bad input rejected (400)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8001/api/route/?start=999,999&end=Denver, CO",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8001",
+          "path": ["api", "route", ""],
+          "query": [
+            {"key": "start", "value": "999,999"},
+            {"key": "end", "value": "Denver, CO"}
+          ]
+        },
+        "description": "Out-of-range coordinates -> 400 with clear error. Input validation demo."
+      }
+    }
+  ]
+}
