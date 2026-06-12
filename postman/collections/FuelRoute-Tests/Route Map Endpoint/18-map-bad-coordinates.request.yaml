@@ -1,0 +1,17 @@
+$kind: http-request
+name: Map Bad Coordinates
+method: GET
+url: '{{baseUrl}}/api/route/map/'
+order: 18000
+queryParams:
+  - key: start
+    value: '999,999'
+  - key: end
+    value: 'Denver,CO'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });

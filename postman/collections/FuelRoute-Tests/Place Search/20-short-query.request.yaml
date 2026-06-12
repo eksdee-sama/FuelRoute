@@ -1,0 +1,19 @@
+$kind: http-request
+name: Short Query
+method: GET
+url: '{{baseUrl}}/api/search/'
+order: 20000
+queryParams:
+  - key: q
+    value: 'A'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 200', function () {
+        pm.response.to.have.status(200);
+      });
+      pm.test('Response is an empty array', function () {
+        var j = pm.response.json();
+        pm.expect(j).to.be.an('array').that.is.empty;
+      });

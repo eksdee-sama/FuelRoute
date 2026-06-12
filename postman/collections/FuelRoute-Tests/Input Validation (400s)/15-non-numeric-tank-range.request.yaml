@@ -1,0 +1,23 @@
+$kind: http-request
+name: Non-Numeric Tank Range
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 15000
+queryParams:
+  - key: start
+    value: 'New York,NY'
+  - key: end
+    value: 'Boston,MA'
+  - key: tank_range
+    value: 'abc'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Response has error key', function () {
+        var j = pm.response.json();
+        pm.expect(j).to.have.property('error');
+      });

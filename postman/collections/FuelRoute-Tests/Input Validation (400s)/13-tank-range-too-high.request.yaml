@@ -1,0 +1,23 @@
+$kind: http-request
+name: Tank Range Too High
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 13000
+queryParams:
+  - key: start
+    value: 'New York,NY'
+  - key: end
+    value: 'Boston,MA'
+  - key: tank_range
+    value: '9999'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Error mentions tank_range', function () {
+        var j = pm.response.json();
+        pm.expect(j.error).to.include('tank_range');
+      });

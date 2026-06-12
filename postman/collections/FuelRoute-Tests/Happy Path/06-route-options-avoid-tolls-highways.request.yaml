@@ -1,0 +1,27 @@
+$kind: http-request
+name: 'Route options — avoid tolls & highways'
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 6000
+queryParams:
+  - key: start
+    value: 'Los Angeles,CA'
+  - key: end
+    value: 'San Francisco,CA'
+  - key: avoid_tolls
+    value: '1'
+  - key: avoid_highways
+    value: '1'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      const jsonData = pm.response.json();
+
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test("Response has summary", function () {
+          pm.expect(jsonData).to.have.property("summary");
+      });

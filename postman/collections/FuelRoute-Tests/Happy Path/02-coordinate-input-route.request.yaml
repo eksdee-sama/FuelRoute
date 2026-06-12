@@ -1,0 +1,33 @@
+$kind: http-request
+name: Coordinate input route
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 2000
+queryParams:
+  - key: start
+    value: '39.7392,-104.9903'
+  - key: end
+    value: '36.1699,-115.1398'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      const jsonData = pm.response.json();
+
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test("route.start_coordinates has lat and lng", function () {
+          pm.expect(jsonData.route.start_coordinates).to.have.property("lat");
+          pm.expect(jsonData.route.start_coordinates).to.have.property("lng");
+      });
+
+      pm.test("route.end_coordinates has lat and lng", function () {
+          pm.expect(jsonData.route.end_coordinates).to.have.property("lat");
+          pm.expect(jsonData.route.end_coordinates).to.have.property("lng");
+      });
+
+      pm.test("summary.total_fuel_cost_usd is greater than 0", function () {
+          pm.expect(jsonData.summary.total_fuel_cost_usd).to.be.above(0);
+      });

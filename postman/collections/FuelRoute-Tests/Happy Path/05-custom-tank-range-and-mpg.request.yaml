@@ -1,0 +1,31 @@
+$kind: http-request
+name: 'Custom tank_range and mpg'
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 5000
+queryParams:
+  - key: start
+    value: 'Houston,TX'
+  - key: end
+    value: 'Miami,FL'
+  - key: tank_range
+    value: '600'
+  - key: mpg
+    value: '15'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      const jsonData = pm.response.json();
+
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test("summary.vehicle_specs.tank_range_miles equals 600", function () {
+          pm.expect(jsonData.summary.vehicle_specs.tank_range_miles).to.equal(600);
+      });
+
+      pm.test("summary.vehicle_specs.fuel_efficiency_mpg equals 15", function () {
+          pm.expect(jsonData.summary.vehicle_specs.fuel_efficiency_mpg).to.equal(15);
+      });

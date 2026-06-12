@@ -1,0 +1,19 @@
+$kind: http-request
+name: Missing End Param
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 9000
+queryParams:
+  - key: start
+    value: 'New York,NY'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Response has error key', function () {
+        var j = pm.response.json();
+        pm.expect(j).to.have.property('error');
+      });

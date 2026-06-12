@@ -1,0 +1,25 @@
+$kind: http-request
+name: Out of Range Coordinates
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 11000
+queryParams:
+  - key: start
+    value: '999,999'
+  - key: end
+    value: 'Denver,CO'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Response has error key', function () {
+        var j = pm.response.json();
+        pm.expect(j).to.have.property('error');
+      });
+      pm.test('Error is a string', function () {
+        var j = pm.response.json();
+        pm.expect(j.error).to.be.a('string');
+      });

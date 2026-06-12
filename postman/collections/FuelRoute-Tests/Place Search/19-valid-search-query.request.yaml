@@ -1,0 +1,25 @@
+$kind: http-request
+name: Valid Search Query
+method: GET
+url: '{{baseUrl}}/api/search/'
+order: 19000
+queryParams:
+  - key: q
+    value: 'Chicago'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 200', function () {
+        pm.response.to.have.status(200);
+      });
+      pm.test('Response is an array', function () {
+        var j = pm.response.json();
+        pm.expect(j).to.be.an('array');
+      });
+      pm.test('First item is an object if array is non-empty', function () {
+        var j = pm.response.json();
+        if (j.length > 0) {
+          pm.expect(j[0]).to.be.an('object');
+        }
+      });

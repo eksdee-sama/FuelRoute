@@ -1,0 +1,7 @@
+start,end,preset,avoid_tolls,avoid_highways,avoid_terrain,tank_range,mpg,preference
+"New York,NY","Boston,MA",car,0,0,0,400,28,recommended
+"40.7128,-74.0060","42.3601,-71.0589",car,0,0,0,400,28,recommended
+"Los Angeles,CA","San Francisco,CA",suv,1,1,0,450,22,shortest
+"Houston,TX","Miami,FL",truck,0,0,1,800,18,fastest
+"Seattle,WA","Portland,OR",rv,0,0,0,400,10,recommended
+"Denver,CO","Salt Lake City,UT",semi,0,0,1,1400,6,recommended

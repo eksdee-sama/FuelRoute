@@ -1,0 +1,12 @@
+$kind: collection
+name: FuelRoute Tests
+variables:
+  - key: baseUrl
+    value: 'http://localhost:8000'
+    description: Base URL for the FuelRoute API
+  - key: lastTotalCost
+    value: ''
+    description: Stores the last total fuel cost from a route response
+  - key: cacheTestStart
+    value: ''
+    description: Timestamp for cache hit timing test

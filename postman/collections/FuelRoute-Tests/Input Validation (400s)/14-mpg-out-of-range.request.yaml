@@ -1,0 +1,23 @@
+$kind: http-request
+name: MPG Out of Range
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 14000
+queryParams:
+  - key: start
+    value: 'New York,NY'
+  - key: end
+    value: 'Boston,MA'
+  - key: mpg
+    value: '0'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Error mentions mpg', function () {
+        var j = pm.response.json();
+        pm.expect(j.error).to.include('mpg');
+      });

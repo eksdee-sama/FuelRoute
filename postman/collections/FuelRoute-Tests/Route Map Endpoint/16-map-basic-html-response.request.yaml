@@ -1,0 +1,29 @@
+$kind: http-request
+name: Map Basic HTML Response
+method: GET
+url: '{{baseUrl}}/api/route/map/'
+order: 16000
+queryParams:
+  - key: start
+    value: 'Seattle,WA'
+  - key: end
+    value: 'Portland,OR'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 200', function () {
+        pm.response.to.have.status(200);
+      });
+      pm.test('Content-Type includes text/html', function () {
+        pm.expect(pm.response.headers.get('Content-Type')).to.include('text/html');
+      });
+      pm.test('Body contains html tag', function () {
+        pm.expect(pm.response.text().toLowerCase()).to.include('html');
+      });
+      pm.test('X-Cache header exists', function () {
+        pm.expect(pm.response.headers.get('X-Cache')).to.exist;
+      });
+      pm.test('X-Content-Type-Options is nosniff', function () {
+        pm.expect(pm.response.headers.get('X-Content-Type-Options')).to.equal('nosniff');
+      });

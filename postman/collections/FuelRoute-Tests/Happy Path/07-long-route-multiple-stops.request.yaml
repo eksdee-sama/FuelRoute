@@ -1,0 +1,40 @@
+$kind: http-request
+name: 'Long route — multiple stops'
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 7000
+queryParams:
+  - key: start
+    value: 'Denver,CO'
+  - key: end
+    value: 'Las Vegas,NV'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      const jsonData = pm.response.json();
+
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test("summary.total_fuel_stops is at least 1", function () {
+          pm.expect(jsonData.summary.total_fuel_stops).to.be.at.least(1);
+      });
+
+      pm.test("fuel_stops array length equals summary.total_fuel_stops", function () {
+          pm.expect(jsonData.fuel_stops.length).to.equal(jsonData.summary.total_fuel_stops);
+      });
+
+      pm.test("Each fuel stop has sequential stop_number", function () {
+          jsonData.fuel_stops.forEach(function (stop, index) {
+              pm.expect(stop.stop_number).to.equal(index + 1);
+          });
+      });
+
+      pm.test("total_fuel_cost_usd equals initial_fill_cost_usd + refuel_stops_cost_usd (within 0.01)", function () {
+          const total = jsonData.summary.total_fuel_cost_usd;
+          const initial = jsonData.summary.initial_fill_cost_usd;
+          const refuel = jsonData.summary.refuel_stops_cost_usd;
+          pm.expect(Math.abs(total - (initial + refuel))).to.be.below(0.01);
+      });

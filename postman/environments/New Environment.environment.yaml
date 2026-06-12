@@ -1,0 +1,20 @@
+name: FuelRoute Local
+values:
+  - key: baseUrl
+    value: 'http://127.0.0.1:8001'
+    enabled: true
+  - key: start
+    value: 'New York,NY'
+    enabled: true
+  - key: end
+    value: 'Boston,MA'
+    enabled: true
+  - key: preset
+    value: car
+    enabled: true
+  - key: tank_range
+    value: '500'
+    enabled: true
+  - key: mpg
+    value: '10'
+    enabled: true

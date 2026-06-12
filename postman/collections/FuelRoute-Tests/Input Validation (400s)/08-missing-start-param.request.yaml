@@ -1,0 +1,23 @@
+$kind: http-request
+name: Missing Start Param
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 8000
+queryParams:
+  - key: end
+    value: 'Boston,MA'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Response has error key', function () {
+        var j = pm.response.json();
+        pm.expect(j).to.have.property('error');
+      });
+      pm.test('Error is a non-empty string', function () {
+        var j = pm.response.json();
+        pm.expect(j.error).to.be.a('string').and.to.have.length.above(0);
+      });

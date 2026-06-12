@@ -1,0 +1,15 @@
+$kind: http-request
+name: Map Missing Params
+method: GET
+url: '{{baseUrl}}/api/route/map/'
+order: 17000
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test('Status code is 400', function () {
+        pm.response.to.have.status(400);
+      });
+      pm.test('Content-Type includes text/html', function () {
+        pm.expect(pm.response.headers.get('Content-Type')).to.include('text/html');
+      });

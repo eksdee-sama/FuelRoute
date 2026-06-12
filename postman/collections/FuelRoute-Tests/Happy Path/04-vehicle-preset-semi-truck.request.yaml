@@ -1,0 +1,29 @@
+$kind: http-request
+name: 'Vehicle preset — semi truck'
+method: GET
+url: '{{baseUrl}}/api/route/'
+order: 4000
+queryParams:
+  - key: start
+    value: 'Chicago,IL'
+  - key: end
+    value: 'Atlanta,GA'
+  - key: preset
+    value: semi
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      const jsonData = pm.response.json();
+
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      pm.test("summary.vehicle_specs.tank_range_miles equals 1400", function () {
+          pm.expect(jsonData.summary.vehicle_specs.tank_range_miles).to.equal(1400);
+      });
+
+      pm.test("summary.vehicle_specs.fuel_efficiency_mpg equals 6", function () {
+          pm.expect(jsonData.summary.vehicle_specs.fuel_efficiency_mpg).to.equal(6);
+      });
